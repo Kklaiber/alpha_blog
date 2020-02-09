@@ -39,6 +39,14 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    flash[:notice] = "Your article was deleted."
+    redirect_to articles_path
+  end
+
   #This defines the article params method that is used in the create action. This 'white lists' the values of article. The params.require takes in the :article KEY and .permit the :title and :description VALUES.
   private
     def article_params
