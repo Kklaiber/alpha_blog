@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Alpha Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,8 +11,9 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
-
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

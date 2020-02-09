@@ -12,15 +12,15 @@
 <% end %>
 
 <%= form_for @article do |f| %>
-  <p>
+  <p class="center">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </p>
-  <p>
+  <p class="center">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>
-  <p>
+  <p class="center">
     <%= f.submit %>
   </p>
 

@@ -1,2 +1,139 @@
+// THEME COLORS:
+// #00869E
+// #FF5733
+// #FFC300
+
+$navbar-default-bg: #00869E;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+// GLOBAL
+.container{
+  width: 80%;
+  background-color: #fff;
+}
+
+h1.center {
+  padding-bottom: 35px;
+}
+
+.center{
+  text-align: center;
+}
+
+
+// NAVBAR
+.navbar{
+  margin-bottom: 0px;
+  border-radius: 0px;
+  height: 60px;
+}
+
+#logo{
+  float: left;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+#logo:hover, .nav-links:hover{
+  text-decoration: none;
+  color: #c3c3c3 !important;
+}
+
+li a.nav-links{
+  color: white !important;
+  font-size:15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+// HOMEPAGE
+.hero-container{
+  background-image: asset-url('home-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 115px;
+  background-color: transparentize(#fff, .1);
+}
+
+.jumbotron{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: transparentize(#333, .5);
+}
+
+.jumbotron h1{
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.btn-xlarge{
+  background-color: #FFC300;
+  text-transform: uppercase;
+  border-color: #FFB600;
+}
+
+.btn-xlarge:hover{
+  background-color: #00869E;
+}
+
+// FOOTER
+.footer-container{
+  background-color: #00869E;
+  padding: 50px;
+  color: white;
+}
+
+.footer-links{
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.footer-links:hover{
+  color: #FF5733;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+footer ul li {
+  border-bottom: 1px solid #FF5733;
+  margin-bottom: 10px;
+}
+
+.footer-headers h3::before{
+  content: '|';
+  color: #FF5733;
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+.section-three a{
+  background: #FF5733;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.section-three a i {
+  font-size: 20px;
+  color: #fff;
+}
