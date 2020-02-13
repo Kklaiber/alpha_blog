@@ -137,3 +137,22 @@ footer ul li {
   font-size: 20px;
   color: #fff;
 }
+
+.sub-button{
+  background-color: #FF5733;
+  border: none;
+  padding: 3px 15px;
+  margin-left: -5px;
+  text-transform: uppercase;
+}
+
+.sub-email{
+  border: none;
+  padding: 3px 0px;
+  color: #333;
+}
+
+.sub-email:focus{
+  border-color: #FF5733;
+  outline-color: #FF5733;
+}
